@@ -1,4 +1,4 @@
-#Podman + Docker-compose + Apple Silicon GPU (MPS) Support
+# Podman + Docker-compose + Apple Silicon GPU (MPS) Support
 
 Commands to get up & running with Podman + docker-compose + GPU on Macbook pro (Apple silicon)
 
