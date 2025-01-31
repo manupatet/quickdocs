@@ -3,7 +3,7 @@
 Commands to get up & running with Podman + docker-compose + GPU on Macbook pro (Apple silicon)
 
 ## Context
-This is compiled from multiple sources (cited below) and many hours of googling.
+This is compiled from multiple sources (cited below) and hours of googling.
 
 ### Why not DMG installer?
 I did start with podman's mac installer (.dmg). It did not work for me as expected. 
@@ -11,7 +11,7 @@ Firstly, the positives about the dmg:
 1. It gives you a graphical option to choose VM type (applehv or libkrun).
 2. Lays out nicely what's running and what extensions are there.
 
-Beyond that, dmg installer seemed completely disconnected from its CLI counterpart. Some commands worked through graphical interface, some through CLI, some on none. So much so, that even after uninstalling podman, the CLI command was still very much functional. I did a bunch of manual jugglary to remove and clean up my system. If you're unlucky enough to be in the same situation, refer to appendix for safe removal or podman. Therefore, on with the homebrew route.
+Beyond that, dmg installer seemed somewhat disconnected from its CLI counterpart. Some commands worked through graphical interface, some through CLI, some on none. To the point that, even after uninstalling podman, the CLI command was still functional. I did a bunch of manual jugglary to remove and clean up my system. If you're unlucky enough to be in the same situation, refer to appendix for safe removal or podman. Therefore, on with the homebrew route.
 
 ### Steps
 For GPU support, install krunkit first
@@ -82,10 +82,10 @@ podman compose -f docker-compose.yml up <your_service>
 Should work.
 
 ### To the giants, thank you! 
-This document stands on the shouders of great research by following gentlemen:
-1. Andrea Kunar: https://medium.com/@andreask_75652/gpu-accelerated-containers-for-m1-m2-m3-macs-237556e5fe0b
-2. Sergio Lopez: https://sinrega.org/2024-03-06-enabling-containers-gpu-macos/
-3. Kasper Aaquist: https://gist.github.com/kaaquist/dab64aeb52a815b935b11c86202761a3
+This document stands on the shouders of giant write-ups by:
+*Sergio Lopez: https://sinrega.org/2024-03-06-enabling-containers-gpu-macos/
+*Andrea Kunar: https://medium.com/@andreask_75652/gpu-accelerated-containers-for-m1-m2-m3-macs-237556e5fe0b
+*Kasper Aaquist: https://gist.github.com/kaaquist/dab64aeb52a815b935b11c86202761a3
 
 ### Appendix 1
 
