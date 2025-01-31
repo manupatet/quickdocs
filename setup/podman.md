@@ -82,10 +82,10 @@ podman compose -f docker-compose.yml up <your_service>
 Should work.
 
 ### To the giants, thank you! 
-This document stands on the shouders of giant write-ups by:
-*Sergio Lopez: https://sinrega.org/2024-03-06-enabling-containers-gpu-macos/
-*Andrea Kunar: https://medium.com/@andreask_75652/gpu-accelerated-containers-for-m1-m2-m3-macs-237556e5fe0b
-*Kasper Aaquist: https://gist.github.com/kaaquist/dab64aeb52a815b935b11c86202761a3
+This document stands on the shouders of great write-ups by:
+- Sergio Lopez: https://sinrega.org/2024-03-06-enabling-containers-gpu-macos/
+- Kasper Aaquist: https://gist.github.com/kaaquist/dab64aeb52a815b935b11c86202761a3
+- Andrea Kunar: https://medium.com/@andreask_75652/gpu-accelerated-containers-for-m1-m2-m3-macs-237556e5fe0b
 
 ### Appendix 1
 
