@@ -69,4 +69,4 @@ If setup is correct, you’ll see a green slider turn on.
 - **Set OpenAI Base URL**: `https://your-serveo-url.serveo.net/v1`  
 - **Enter random API Key & Verify**   
 
-Now you're all set! 🚀  
+You're set!
