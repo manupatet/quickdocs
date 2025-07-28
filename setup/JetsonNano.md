@@ -1,4 +1,5 @@
 # Setting Up Jetson Nano with Ubuntu 20.04: A Streamlined Guide
+---
 
 The NVIDIA Jetson Nano is a powerful edge AI platform, but out of the box, it comes with unnecessary software that can slow it down. This guide will walk you through setting up Jetson Nano with Ubuntu 20.04, optimizing resources, and installing essential tools like JupyterLab.
 
@@ -76,7 +77,8 @@ jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.tok
 Now, you can access JupyterLab from your browser and start coding!
 
 ## Optional step to install DWA-171 drivers (if you have a DWA-171 dongle WiFi)
-Execute these steps to setup 
+Linux 20.04 Tegra does not come with the drivers for DLink DWA-171 WIFI dongle.
+Execute these steps to setup driver.
 
 ```
 git clone https://github.com/CarlosDev314159/d-link-dwa-171-wifi-adapter-automatic-driver-installer.git
@@ -84,5 +86,10 @@ cd d-link-dwa-171-wifi-adapter-automatic-driver-installer
 pip3 install -r requirements.txt
 python3 main.py
 ```
+
+Sometimes your module will not be detected, and it'll still show as a drive rather than a Wifi Module.
+
+To fix that run `sudo usb_modeswitch -KW -v 0bda -p 1a2b`.  [source](https://forums.linuxmint.com/viewtopic.php?t=330933) 
+
 ---
 Here's your hot off the pan, lightweight, optimized Jetson Nano, ready for AI and robotics projects. Bon apetite!
