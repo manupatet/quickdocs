@@ -75,5 +75,14 @@ jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.tok
 ```
 Now, you can access JupyterLab from your browser and start coding!
 
+## Optional step to install DWA-171 drivers (if you have a DWA-171 dongle WiFi)
+Execute these steps to setup 
+
+```
+git clone https://github.com/CarlosDev314159/d-link-dwa-171-wifi-adapter-automatic-driver-installer.git
+cd d-link-dwa-171-wifi-adapter-automatic-driver-installer
+pip3 install -r requirements.txt
+python3 main.py
+```
 ---
 Here's your hot off the pan, lightweight, optimized Jetson Nano, ready for AI and robotics projects. Bon apetite!
