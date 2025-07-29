@@ -2,9 +2,8 @@
 ---
 
 There are a few ways to install:
-1. There HL Source engine [leak](https://github.com/nillerusr/source-engine) and there's this [release](https://github.com/ValveSoftware/halflife?tab=readme-ov-file)
-2. There's an open-source engine Xash3d, which emulates gold-source engine.
-We'll go the second way.
+1. There HL Source engine [leak](https://github.com/nillerusr/source-engine) plus this [release](https://github.com/ValveSoftware/halflife?tab=readme-ov-file)
+2. There's an open-source engine Xash3d, which emulates gold-source engine. We'll go this way.
 
 ## Install Xash3D source first
 Exexute these commands
