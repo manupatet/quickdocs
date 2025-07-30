@@ -90,6 +90,14 @@ python3 main.py
 Sometimes your module will not be detected, and it'll still show as a drive rather than a Wifi Module.
 
 To fix that run `sudo usb_modeswitch -KW -v 0bda -p 1a2b`.  [source](https://forums.linuxmint.com/viewtopic.php?t=330933) 
+You obviously don't want to run it on every boot, so to make this permamnent: 
+`sudo vi /lib/udev/rules.d/40-usb_modeswitch.rules`, look for line with `DWA-171` and a `-K` to it (it means eject before switching mode)
+ 
+```
+# For your Realtek DWA-171 device
+ATTR{idVendor}=="0bda", ATTR{idProduct}=="1a2b", RUN+="usb_modeswitch -K '%b/%k'"
+```
+
 
 ---
 Here's your hot off the pan, lightweight, optimized Jetson Nano, ready for AI and robotics projects. Bon apetite!
