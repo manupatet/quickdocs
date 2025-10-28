@@ -29,7 +29,7 @@ export CONTAINERS_MACHINE_PROVIDER="libkrun"
 
 Then with the usual podman setup commands
 ```
-podman machine init --cpus 8 --memory 16384 --disk-size 64 --username <you>
+podman machine init --cpus 8 --memory 16384 --disk-size 128 --username <you> -v /Users/you/repo/containers/:workspace
 podman machine start
 ```
 
